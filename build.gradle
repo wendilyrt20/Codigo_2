@@ -1,6 +1,8 @@
 plugins {
     id 'java'
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+
 }
 
 group 'org.example'
@@ -22,4 +24,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+shadowJar{
+    baseName = 'appORM'
+    classifier = ''
+    archiveVersion = ''
 }
