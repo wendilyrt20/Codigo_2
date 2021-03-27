@@ -16,7 +16,7 @@ public class Main {
         app.start(8000);
 
         app.get("/", ctx -> {
-            ctx.result("Bienvenido a aplicacion 2");
+            ctx.result("Bienvenido a aplicacion 2.");
         });
 
     }
